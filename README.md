@@ -1,5 +1,7 @@
 # AngularTourOfHeroes
 
+I have made this project to help you follow easilly the Angular Tour of Hero. There is a lot of helpfull comment you definetly need for a better understanding. 
+@RAVJS
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.24.
 
 ## Development server
