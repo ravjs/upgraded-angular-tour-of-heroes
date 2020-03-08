@@ -15,6 +15,10 @@ import { HttpClientModule }    from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './in-memory-data.service';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MaterialModule} from '../app/material-module/material.module';
+
+import { MatSliderModule } from '@angular/material/slider';
 
 @NgModule({
   declarations: [
@@ -30,13 +34,19 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    MaterialModule,
+
 
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.
     // Remove it when a real server is ready to receive requests.
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, { dataEncapsulation: false }
-    )
+    ),
+
+    BrowserAnimationsModule,
+
+    MatSliderModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

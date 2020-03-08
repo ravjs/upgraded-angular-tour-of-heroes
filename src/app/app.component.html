@@ -1,10 +1,27 @@
-<h1>{{title}}</h1>
-<nav>
-  <a routerLink="/dashboard">Dashboard</a>
-  <a routerLink="/heroes">Heroes</a>
-</nav>
-
-<router-outlet></router-outlet>
 
 
-<app-messages></app-messages>
+<mat-toolbar color="primary">
+  <span> {{title}} </span>
+
+  <!-- This fills the remaining space of the current row -->
+  <span class="fill-remaining-space"></span>
+
+  <span>
+    <nav>
+      <button  mat-button routerLink="/dashboard">Dashboard</button >
+      <button  mat-button routerLink="/heroes">Heroes</button >
+
+    </nav>
+
+  </span>
+</mat-toolbar>
+
+
+<mat-card>
+  <router-outlet></router-outlet>
+
+  <app-messages></app-messages>
+
+</mat-card>
+
+
